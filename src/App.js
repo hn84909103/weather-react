@@ -5,7 +5,7 @@ import 'weather-icons/css/weather-icons.css';
 
 const api = {
   key: "ea0a788c803d1f0772c799a988c16294",
-  base:"http://api.openweathermap.org/data/2.5/"
+  base:"https://api.openweathermap.org/data/2.5/"
 }
 
 function App() {
