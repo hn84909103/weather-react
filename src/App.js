@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
+import 'weather-icons/css/weather-icons.css';
+
 
 const api = {
   key: "ea0a788c803d1f0772c799a988c16294",
@@ -43,15 +46,21 @@ function App() {
               <div className="date">{new Date().toLocaleDateString(undefined, options)}</div>
             </div>
             <div className="weather-box">
-              <div className="temp">
-                {Math.round(weather.main.temp)}°F
-              </div>
-              <div className="weather">
-                <div>
-                  <img className="weather-icon" src ={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="wthr img" />
-                </div>
+              <div className="weather-box-m">
+                <div className="weather-icon-api"><i class={`wi wi-owm-${weather.weather[0].id} display-4`}></i></div>
+                <div className="weather">
                 {weather.weather[0].main}
+                </div>
               </div>
+              <br></br>
+              <div className="temp">
+                <div className="tem">{Math.round(weather.main.temp)}</div><div className="degree">°</div><div className="fahren">F</div>
+                <br></br>
+                <div className="temp-min">{Math.round(weather.main.temp_min)}°F↓</div>
+                <div className="vl"></div>
+                <div className="temp-max">{Math.round(weather.main.temp_max)}°F↑</div>
+              </div>
+              
             </div>
           </div>
         ) : (

@@ -82,35 +82,73 @@ main{
 
 .weather-box{
   text-align: center;
+}
 
+.weather-box .weather-box-m{
+  position: relative;
+  display: inline-block;
+  margin-top: 40px;
 }
 
 .weather-box .temp{
   position: relative;
   display: inline-block;
-  margin: 30px auto;
+  margin: 20px auto;
+  padding: 0 20px 20px 20px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
-
-  padding: 15px 25px;
-
-  color: #ffffff;
-  font-size: 102px;
-  font-weight: 900;
-
-  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
   text-align: center;
+  color: #ffffff;
   box-shadow: 3px 6px rgba(0,0,0,0.2);
 }
 
-.weather-box .weather{
-  color:#ffffff;
-  font-size: 40px;
-  font-weight: 700;
-  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+.temp .tem{
+  font-size: 110px;
+  font-weight: 300;
+  float: left;
 }
 
-.weather-box .weather-icon{
-  height: 120px;
-  width: 120px;
+.temp .fahren{
+  font-size: 35px;
+  font-weight: 500;
+  float: left;
+  padding: 30px 0 0 15px;
+}
+
+.degree{
+  font-size: 45px;
+  float: left;
+  padding: 20px 0 0 0;
+}
+
+.weather-box .weather{
+  float: left;
+  padding: 0 0 0 10px;
+  color:#ffffff;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.weather-icon-api{
+  color: #ffffff;
+  padding: 0 10px 0 0;
+  float: left;
+}
+
+.temp-min{
+  display: inline-block;
+  font-size: 23px;
+  padding: 0 10px 0 0;
+}
+
+.temp-max{
+  display: inline-block;
+  font-size: 23px;
+  padding: 0 0 0 10px;
+}
+
+.vl{
+  display: inline-block;
+  border-left: 2px solid rgba(255,255,255,0.3);
+  height: 18px;
 }

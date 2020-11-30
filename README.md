@@ -1,4 +1,4 @@
-# Getting Started with Create React App (for CISC3140 Lab11)
+# Getting Started with Create React App (for CISC3140 Lab11-12)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
